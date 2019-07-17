@@ -109,14 +109,14 @@ window.onload = function() {
    * 지도
    */
   const map = new daum.maps.Map(document.getElementById("map"), {
-    center: new daum.maps.LatLng(37.504263,127.043006),
+    center: new daum.maps.LatLng(36.377160,127.392678),
     level: 4 //지도의 레벨(확대, 축소 정도)
   });
   map.setZoomable(false);
   map.setDraggable(false);
 
   new daum.maps.Marker({
-    position: new daum.maps.LatLng(37.504263,127.043006),
+    position: new daum.maps.LatLng(36.377160,127.392678),
     image: new daum.maps.MarkerImage(
       "./assets/img/marker.png",
       new daum.maps.Size(64, 69),
