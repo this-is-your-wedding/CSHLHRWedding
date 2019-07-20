@@ -24,7 +24,7 @@ body {
 }
 
 b {
-  color: #7490c7;
+  color: #D93E2B;
 }
 
 nav {
@@ -61,7 +61,7 @@ nav .menus .on .emoji {
 }
 
 nav .progress {
-  background: #7490c7;
+  background: #D93E2B;
   display: block;
   width: 100%;
   height: 0.5vw;
