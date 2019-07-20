@@ -1,13 +1,15 @@
 @font-face {
-  font-family: "777Balsamtint";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Jeju Myeongjo';
   font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.ttf) format('truetype');
 }
-@font-face {
-  font-family: "FlowerRoad";
-  src: url("./assets/font/SangSangFlowerRoad.otf");
-}
+
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff'); } @font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff'); } .lottemarthappy * { font-family: 'LotteMartHappy', sans-serif; }
 
 * {
   margin: 0;
@@ -18,7 +20,7 @@
 
 html,
 body {
-  font-family: "NanumSquare", sans-serif;
+  font-family: Jeju Myeongjo;
 }
 
 b {
@@ -91,7 +93,7 @@ nav .progress {
   text-align: center;
   margin-bottom: 3vw;
   margin-top: 5vw;
-  font-family: FlowerRoad;
+  font-family: LotteMartHappy;
 }
 
 .content .divider {
@@ -122,7 +124,7 @@ nav .progress {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  font-family: FlowerRoad;
+  font-family: LotteMartHappy;
 }
 
 .main .flower .names {
@@ -140,7 +142,6 @@ nav .progress {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  font-family: 'BRBA_B';
 }
 
 .main .flower .names .name {
@@ -148,7 +149,8 @@ nav .progress {
 }
 
 .main .flower .names .em {
-  font-size: 9vw;
+  font-size: 4.5vw;
+  margin: 5vw;
 }
 
 .main .schedule {
@@ -162,8 +164,8 @@ nav .progress {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 6vw;
-  font-family: "777Balsamtint";
+  font-size: 5vw;
+  line-height: 1.5;
 }
 
 .profile {
@@ -178,9 +180,9 @@ nav .progress {
 
 .profile .invitation {
   text-align: center;
-  font-size: 5vw;
+  font-size: 3.5vw;
   margin: 7vw 7vw 11vw;
-  font-family: "777Balsamtint";
+  line-height: 1.5;
 }
 
 .profile .pictures {
@@ -223,25 +225,25 @@ nav .progress {
 }
 
 .profile .pictures div.seunghyeon {
-  -webkit-clip-path: circle(40% at 40% 53%);
-          clip-path: circle(40% at 40% 53%);
+  -webkit-clip-path: circle(42% at 55% 51%);
+          clip-path: circle(42% at 55% 51%);
 }
 
 .profile .pictures div.seunghyeon img {
-  -webkit-transform: scale(3.0) translateX(5.3vw) translateY(8vw);
-          transform: scale(3.0) translateX(5.3vw) translateY(8vw);
+  -webkit-transform: scale(2.5) translateX(4.3vw) translateY(7vw);
+          transform: scale(2.5) translateX(4.3vw) translateY(7vw);
   -webkit-transform-origin: center;
           transform-origin: center;
 }
 
 .profile .pictures div.ara {
-  -webkit-clip-path: circle(40% at 58% 53%);
-          clip-path: circle(40% at 58% 53%);
+  -webkit-clip-path: circle(42% at 45% 51%);
+          clip-path: circle(42% at 45% 51%);
 }
 
 .profile .pictures div.ara img {
-  -webkit-transform: scale(3.0) translateX(-7.7vw) translateY(6.9vw);
-          transform: scale(3.0) translateX(-7.7vw) translateY(6.9vw);
+  -webkit-transform: scale(2.5) translateX(-5.7vw) translateY(4.9vw);
+          transform: scale(2.5) translateX(-5.7vw) translateY(4.9vw);
   -webkit-transform-origin: center;
           transform-origin: center;
 }
@@ -252,8 +254,7 @@ nav .progress {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 5vw;
-  font-family: "777Balsamtint";
+  font-size: 4vw;
 }
 
 .profile .introduction .relationship {
@@ -277,7 +278,7 @@ nav .progress {
 
 .profile .introduction .relationship .josa {
   margin: 0 1.5vw;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
 }
 
 .profile .introduction .relationship .child {
@@ -305,7 +306,6 @@ nav .progress {
           align-items: center;
   width: 39vw;
   height: 8vw;
-  font-family: "777Balsamtint";
 }
 
 .profile .contacts .contact .tel {
@@ -450,6 +450,7 @@ nav .progress {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1vw;
+  line-height: 1.3;
 }
 
 .footer {

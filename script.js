@@ -66,7 +66,7 @@ window.onload = function() {
    * 이미지
    */
   const imagesEl = document.querySelector(".images");
-  for (let i = 0; i < 17; i++) {
+  for (let i = 0; i < 2; i++) {
     const imageWrapperEl = document.createElement("div");
     imageWrapperEl.className = "image-wrapper";
     const imageEl = document.createElement("img");
@@ -109,8 +109,8 @@ window.onload = function() {
    * 지도
    */
   const map = new daum.maps.Map(document.getElementById("map"), {
-    center: new daum.maps.LatLng(36.377160,127.392678),
-    level: 4 //지도의 레벨(확대, 축소 정도)
+    center: new daum.maps.LatLng(36.375233, 127.393150),
+    level: 5 //지도의 레벨(확대, 축소 정도)
   });
   map.setZoomable(false);
   map.setDraggable(false);
